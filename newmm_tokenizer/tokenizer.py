@@ -1,8 +1,8 @@
 import re
 from typing import List
 
-from newmm_tokenizer.entities.trie import Trie
-from newmm_tokenizer.utils.newmm import segment
+from .trie import Trie
+from .newmm import segment
 
 DEFAULT_WORD_TOKENIZE_ENGINE = "newmm"
 

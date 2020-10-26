@@ -9,7 +9,7 @@ def corpus_path() -> str:
     Get path where corpus files are kept locally.
     """
     # return _CORPUS_PATH
-    return 'newmm_tokenizer/utils'
+    return 'newmm_tokenizer'
 
 def get_corpus(filename: str, as_is: bool = False) -> Union[frozenset, list]:
     """
