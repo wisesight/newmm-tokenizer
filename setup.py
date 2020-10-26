@@ -12,7 +12,9 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/wisesight/newmm-tokenizer",
-    packages=find_packages(),
+    package_data={
+        "newmm_tokenizer": ['words_th.txt']
+    },
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: Apache Software License",
