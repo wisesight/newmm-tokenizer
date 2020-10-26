@@ -16,12 +16,10 @@ import re
 from collections import defaultdict
 from heapq import heappop, heappush
 from typing import Generator, List
-from .common import thai_words
+from newmm_tokenizer.utils.common import thai_words
 
-# from pythainlp.tokenize import DEFAULT_WORD_DICT_TRIE
-
-from .trie import Trie
-from .tcc import tcc_pos
+from newmm_tokenizer.entities.trie import Trie
+from newmm_tokenizer.utils.tcc import tcc_pos
 
 DEFAULT_WORD_DICT_TRIE = Trie(thai_words())
 
