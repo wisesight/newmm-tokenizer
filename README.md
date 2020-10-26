@@ -15,7 +15,7 @@ pip install newmm-tokenizer
 
 ## __How to Use__
 ```python
-from newmm_tokenizer.usecases.tokenizer import word_tokenize
+from newmm_tokenizer.tokenizer import word_tokenize
 
 text = 'เป็นเรื่องแรกที่ร้องไห้ตั้งแต่ ep 1 แล้วก็เป็นเรื่องแรกที่เลือกไม่ได้ว่าจะเชียร์พระเอกหรือพระรองดี'
 words = word_tokenize(text)
