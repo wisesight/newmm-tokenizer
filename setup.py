@@ -8,7 +8,7 @@ setup(
     version="0.1.0",
     author="WISESIGHT Product Development",
     author_email="tequila@wisesight.com",
-    description="Standalone Dictionary-based, Maximum Matching + Thai Character Cluster (newmm) tokenizer extracted from pythainlp",
+    description="Standalone Dictionary-based, Maximum Matching + Thai Character Cluster (newmm) tokenizer extracted from PyThaiNLP",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/wisesight/newmm-tokenizer",
