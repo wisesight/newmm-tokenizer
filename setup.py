@@ -5,17 +5,17 @@ with open("README.md", "r") as fh:
 
 setup(
     name="newmm_tokenizer",
-    version="0.1.1",
+    version="0.2.0",
     author="WISESIGHT Product Development",
     author_email="tequila@wisesight.com",
     description="Standalone Dictionary-based, Maximum Matching + Thai Character Cluster (newmm) tokenizer extracted from PyThaiNLP",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/wisesight/newmm-tokenizer",
-    # package_data={"newmm-tokenizer.newmm_tokenizer": ["words_th.txt"]},
-    data_files=[  # is the important part
-        ("newmm_tokenizer", ["README.md", "words_th.txt"])
-    ],
+    packages=find_packages(),
+    package_data={
+        "newmm_tokenizer": ['words_th.txt']
+    },
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: Apache Software License",
@@ -25,5 +25,5 @@ setup(
         "Topic :: Text Processing :: General",
         "Topic :: Text Processing :: Linguistic",
     ],
-    python_requires=">=3.6",
+    python_requires=">=3.7",
 )
