@@ -6,7 +6,7 @@ Standalone Dictionary-based, Maximum Matching + Thai Character Cluster (newmm) t
 This repository is created for reducing an overall size of original [PyThaiNLP Tokenizer Module](https://www.thainlp.org/pythainlp/docs/2.2/api/tokenize.html). The main objective is to be able to segment Thai sentences into a list of words.
 
 ## __Supports__
-The module supports Python 3.6+ as follow the original PyThaiNLP repository.
+The module supports Python 3.7+ as follow the original PyThaiNLP repository.
 
 ## __Installation__
 ```
