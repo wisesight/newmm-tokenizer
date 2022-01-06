@@ -2,14 +2,16 @@ import os
 from typing import Union
 
 _CORPUS_DIRNAME = "corpus"
-_CORPUS_PATH = os.path.join('', _CORPUS_DIRNAME)
+_CORPUS_PATH = os.path.join("", _CORPUS_DIRNAME)
 
-def corpus_path() -> str:
-    """
-    Get path where corpus files are kept locally.
-    """
-    # return _CORPUS_PATH
-    return 'newmm_tokenizer'
+
+# def corpus_path() -> str:
+#     """
+#     Get path where corpus files are kept locally.
+#     """
+#     # return _CORPUS_PATH
+#     return "newmm_tokenizer"
+
 
 def get_corpus(filename: str, as_is: bool = False) -> Union[frozenset, list]:
     """
@@ -38,7 +40,8 @@ def get_corpus(filename: str, as_is: bool = False) -> Union[frozenset, list]:
         #    'หยิบยื่น\\t3',
         #     ...})
     """
-    path = os.path.join(corpus_path(), filename)
+    path = os.path.join(os.path.dirname(__file__), filename)
+
     lines = []
     with open(path, "r", encoding="utf-8-sig") as fh:
         lines = fh.read().splitlines()
